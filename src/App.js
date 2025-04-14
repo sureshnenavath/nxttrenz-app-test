@@ -65,6 +65,7 @@ class App extends Component {
     const productObject = cartList.find(
       eachCartItem => eachCartItem.id === product.id,
     )
+    console.log('Product being added:', product)
 
     if (productObject) {
       this.setState(prevState => ({
